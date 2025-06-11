@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#000000">
+    <title>Frase Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="videoContainer" class="video-container">
+        <video id="introVideo" class="intro-video" playsinline>
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <button id="skipButton" class="skip-button">Saltar</button>
+    </div>
+
+    <div id="carabacaVideoContainer" class="video-container" style="display: none;">
+        <video id="carabacaVideo" class="intro-video" playsinline>
+            <source src="carabaca.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <button id="closeCarabacaButton" class="skip-button">Cerrar</button>
+    </div>
+
+    <div id="mainContent" class="container" style="display: none;">
+        <div id="resultado" class="resultado"></div>
+        <div class="input-container">
+            <input type="text" id="fraseInput" placeholder="Escribe una frase aquí..." autocomplete="off">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
