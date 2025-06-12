@@ -9,16 +9,19 @@
 </head>
 <body>
     <div id="videoContainer" class="video-container">
-        <video id="introVideo" class="intro-video" playsinline>
-            <source src="video.mp4" type="video/mp4">
-            Tu navegador no soporta el elemento de video.
-        </video>
+        <div class="video-wrapper">
+            <video id="introVideo" class="intro-video" playsinline>
+                <source src="vid1.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <button id="playButton" class="play-button">▶ Reproducir</button>
+        </div>
         <button id="skipButton" class="skip-button">Saltar</button>
     </div>
 
     <div id="carabacaVideoContainer" class="video-container" style="display: none;">
         <video id="carabacaVideo" class="intro-video" playsinline>
-            <source src="carabaca.mp4" type="video/mp4">
+            <source src="vid2.mp4" type="video/mp4">
             Tu navegador no soporta el elemento de video.
         </video>
         <button id="closeCarabacaButton" class="skip-button">Cerrar</button>

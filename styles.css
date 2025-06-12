@@ -174,4 +174,38 @@ input::placeholder {
     body {
         background: #000000;
     }
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    z-index: 1001;
+}
+
+.play-button:hover {
+    background-color: rgba(255, 0, 0, 1);
+    transform: translate(-50%, -50%) scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
 } 
